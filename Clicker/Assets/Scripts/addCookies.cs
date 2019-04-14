@@ -20,7 +20,7 @@ public class addCookies : MonoBehaviour
         {
             cookies++;
             Gold.gold -= cost;
-            cost = cost + (cookies * costMult);
+            cost = cost + ((cookies * costMult)*0.7f);
 
         }
         Debug.Log("gold = " + gold);

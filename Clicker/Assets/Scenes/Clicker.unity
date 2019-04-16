@@ -122,10 +122,10 @@ GameObject:
   m_Component:
   - component: {fileID: 372751601}
   - component: {fileID: 372751600}
-  - component: {fileID: 372751599}
   - component: {fileID: 372751602}
+  - component: {fileID: 372751599}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Obj_1_Money
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -140,10 +140,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 372751598}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 387f389c67bdc5a429017a6378c4aa06, type: 3}
+  m_Script: {fileID: 11500000, guid: 8c6d1a83a461ff9438e7f330b657d133, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 5
+  price: 0
+  multiplier: 1.07
+  n: 0
 --- !u!212 &372751600
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -181,7 +183,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b4a65e6eee73e33408fabe31a6f51db7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a92d141289b3bc3478b265d54655a861, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -200,8 +202,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 372751598}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.19, y: -3.96, z: 0}
-  m_LocalScale: {x: 3.113, y: 1, z: 1}
+  m_LocalPosition: {x: -10.664, y: -3.916, z: 0}
+  m_LocalScale: {x: 1.6822217, y: 1.0850359, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -219,18 +221,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.00000035762787, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 3.7, y: 1.01}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 3.6725147, y: 1}
   m_EdgeRadius: 0
 --- !u!1 &1720599508
 GameObject:
@@ -403,8 +405,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1966437239}
   - component: {fileID: 1966437238}
-  - component: {fileID: 1966437237}
   - component: {fileID: 1966437240}
+  - component: {fileID: 1966437237}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -421,12 +423,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1966437236}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1a9f4aea91e1cb46bd0cb53fc90d287, type: 3}
+  m_Script: {fileID: 11500000, guid: fcf21d84383be6e47b4fcefa051d9421, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cookies: 0
-  mult: 1
-  baseClick: 20
+  coinsOnClick: 0
   guiStyle:
     m_Name: 
     m_Normal:

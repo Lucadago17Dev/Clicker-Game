@@ -34,6 +34,6 @@ void Update()
     void OnGUI()
     {
         guiStyle.fontSize = 20;
-        GUI.Label(new Rect(10, 10, 100, 20),"Money : "+ gold.ToString("#.00"),guiStyle);
+        GUI.Label(new Rect(10, 10, 100, 20),"Money : "+ gold.ToString("#.00"), guiStyle);
     }
 }

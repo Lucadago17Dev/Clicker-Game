@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class MainController : MonoBehaviour
 {
-     float coins = 50;
+    public static float coins;
     public float coinsOnClick;
 
 
 
-    public GUIStyle guiStyle;
+    public  GUIStyle guiStyle;
 
 
     void Update()

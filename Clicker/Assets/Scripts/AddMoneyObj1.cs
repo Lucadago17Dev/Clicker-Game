@@ -4,23 +4,40 @@ using UnityEngine;
 
 public class AddMoneyObj1 : MonoBehaviour
 {
-    float basePrice = 50.0f;
+    public float basePrice;
     public float price;
-    public float multiplier = 1.07f;
+    public float costMultiplier;
     public float n = 0.0f;
-   
+    public float coins;
+
+
+
+    
+    
+
     
     void Update()
     {
-        price = basePrice * Mathf.Pow(multiplier, n);
+        coins = MainController.coins;
+        price = basePrice * Mathf.Pow(costMultiplier, n);
     }
 
 
 
     private void OnMouseDown()
     {
-        
+        if(price<=coins)
+        {
+            n++;
+            MainController.coins -= price;
+        }
+    }
 
+
+    void OnGUI()
+    {
+        var position = Camera.main.WorldToScreenPoint(gameObject.transform.position);
+        GUI.Label(new Rect(position.x, Screen.height-position.y, 100, 20), "Cost : " + price.ToString("#.00"));
     }
 
 

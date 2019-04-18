@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class MainController : MonoBehaviour
 {
     public static float coins = 50;
-    public static float coinsOnClick;
+    public static float coinsOnClick = 1.5f;
     public GameObject popupNumber;
     public Text coinsOnClickText;
 
@@ -22,7 +22,7 @@ public class MainController : MonoBehaviour
     private void OnMouseDown()
     {
         coins += coinsOnClick;
-        coinsOnClickText.text = coinsOnClick.ToString();
+        coinsOnClickText.text = coinsOnClick.ToString("#.00");
         Vector3 range = new Vector3(Random.Range(-2.0f, 2.0f), 0, 0);
         var clone = (GameObject)Instantiate(popupNumber, transform.position-range, Quaternion.Euler(Vector2.zero));
         clone.GetComponent<PopupText>().popupNumber = coinsOnClick;

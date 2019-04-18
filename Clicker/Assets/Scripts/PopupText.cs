@@ -18,7 +18,7 @@ public class PopupText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        displayNumber.text = "" + popupNumber;
+        displayNumber.text = popupNumber.ToString("#.00");
         transform.position = new Vector2(transform.position.x, transform.position.y + (moveSpeed * Time.deltaTime));
     }
 }

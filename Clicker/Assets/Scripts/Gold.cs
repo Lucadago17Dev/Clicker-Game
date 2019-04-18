@@ -26,7 +26,7 @@ void Update()
 
     private void OnMouseDown()
     {
-        gold = gold + (baseClick * mult);
+        gold += (baseClick * mult);
 
     }
 

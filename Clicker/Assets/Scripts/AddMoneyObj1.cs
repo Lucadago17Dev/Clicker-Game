@@ -37,7 +37,8 @@ public class AddMoneyObj1 : MonoBehaviour
     void OnGUI()
     {
         var position = Camera.main.WorldToScreenPoint(gameObject.transform.position);
-        GUI.Label(new Rect(position.x, Screen.height-position.y, 100, 20), "Cost : " + price.ToString("#.00"));
+        GUI.Label(new Rect(position.x, Screen.height-position.y, 500, 20), "Cost : " + price.ToString("#.00"));
+        GUI.Label(new Rect(position.x-100, Screen.height - position.y, 500, 20), "Level : " + n);
     }
 
 

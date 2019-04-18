@@ -9,7 +9,8 @@ public class AddMoneyObj1 : MonoBehaviour
     public float costMultiplier;
     public float n = 0.0f;
     public float coins;
-
+    public float clickMult;
+    public static float clickMultiplier;
 
 
     
@@ -20,6 +21,7 @@ public class AddMoneyObj1 : MonoBehaviour
     {
         coins = MainController.coins;
         price = basePrice * Mathf.Pow(costMultiplier, n);
+        
     }
 
 
@@ -30,6 +32,7 @@ public class AddMoneyObj1 : MonoBehaviour
         {
             n++;
             MainController.coins -= price;
+            clickMultiplier = clickMult * n;
         }
     }
 

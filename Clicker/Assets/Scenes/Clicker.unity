@@ -145,9 +145,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   basePrice: 200
   price: 0
-  costMultiplier: 0
+  costMultiplier: 1.07
   n: 0
   coins: 0
+  clickMult: 5
 --- !u!212 &32213801
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -269,9 +270,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   basePrice: 50
   price: 0
-  costMultiplier: 0
+  costMultiplier: 1.07
   n: 0
   coins: 0
+  clickMult: 1.5
 --- !u!212 &372751600
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -553,6 +555,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinsOnClick: 0
+  popupNumber: {fileID: 9021305879772621411, guid: 6098b96b6d5b0ce45828ea03183683cc,
+    type: 3}
+  coinsOnClickText: {fileID: 2393977323843967621, guid: 266dd6bd750a7bf4e85ad6b980641d88,
+    type: 3}
   guiStyle:
     m_Name: 
     m_Normal:

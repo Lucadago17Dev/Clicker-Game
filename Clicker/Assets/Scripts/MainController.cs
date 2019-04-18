@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class MainController : MonoBehaviour
 {
     public static float coins = 50;
-    public float coinsOnClick;
+    public static float coinsOnClick;
     public GameObject popupNumber;
     public Text coinsOnClickText;
 
@@ -15,7 +15,7 @@ public class MainController : MonoBehaviour
 
     void Update()
     {
-        coinsOnClick = AddMoneyObj1.clickMultiplier;
+       
         
     }
 

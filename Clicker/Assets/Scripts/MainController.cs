@@ -9,14 +9,31 @@ public class MainController : MonoBehaviour
     public static float coinsOnClick = 1.5f;
     public GameObject popupNumber;
     public Text coinsOnClickText;
+    public static float cps;
 
     public  GUIStyle guiStyle;
 
+    public float timer;
+
+
+    private void Start()
+    {
+        timer = 1;
+        
+    }
 
     void Update()
     {
-       
-        
+        timer-=Time.deltaTime;
+       if(timer<=0)
+        {
+            coins += cps;
+            timer = 1;
+            var cloneCps = (GameObject)Instantiate(popupNumber, transform.position, Quaternion.Euler(Vector2.zero));
+            cloneCps.GetComponent<PopupText>().popupNumber = cps;
+
+        }
+
     }
 
     private void OnMouseDown()
